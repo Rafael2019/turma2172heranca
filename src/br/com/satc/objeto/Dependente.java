@@ -43,6 +43,13 @@ public class Dependente extends Pessoa{
         this.dataNascimento = dataNascimento;
     }
 
+    public Dependente(Cliente responsavel, Date dataNascimento, int idade, String nome, String rg, String cpf) {
+        super(nome, rg, cpf);
+        this.responsavel = responsavel;
+        this.dataNascimento = dataNascimento;
+        this.idade = idade;
+    }
+
     
     
     public Cliente getResponsavel() {

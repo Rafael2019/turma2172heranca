@@ -5,7 +5,7 @@
  */
 package br.com.satc;
 
-import br.com.satc.objeto.Cliente;
+import br.com.satc.objeto.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,7 +23,7 @@ public class MainDataDeNascimento {
           SimpleDateFormat sdf =  new SimpleDateFormat("dd//MM/yyyy");
         dataNascimento = sdf.parse("12/03/1991");
         Cliente pai = new Cliente(data, "Markson",  "123",  "666");
-        Depedente filho = new Depedente(pai, dataNascimento, "Markson", "123", "888");
+        Dependente filho = new Dependente(pai, dataNascimento, "Markson", "123", "888");
         
         System.out.println(filho.getIdade());
         
